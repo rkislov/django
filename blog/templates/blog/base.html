@@ -10,9 +10,11 @@
     </head>
     <body>
         <div class="page-header">
+            {%if user.is_authenticates %}
             <a href="{% url 'post_new' %}" class="top-menu">
                 <span class="glyphicon glyphicon-plus"></span>
             </a>
+            {% endif %}
             <h1><a href="/">Главная страница</a></h1>
             
         </div>
